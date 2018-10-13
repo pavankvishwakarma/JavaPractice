@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 public class QuickSort {
 	public static int[] quicksort(int a[], int min, int max){
-		if(a.length<2){
+		if(min>max){
 			return a;
 		}
 		
-		int pivot=a[a.length-1];
-		int index=0;
+		int pivot=a[max];
+		int index=min;
 		for (int i = min; i < max; i++) {
 			if(a[i]>pivot){
 				continue;
@@ -21,8 +21,14 @@ public class QuickSort {
 				index++;
 			}
 		}
-		min=
-		quicksort(a);
+		
+		int temp1= a[max];
+		a[max]=a[index];
+		a[index]=temp1;
+		
+		
+		quicksort(a,min,index-1);
+		quicksort(a, index+1, max);
 		
 		return a;
 	}
@@ -39,8 +45,16 @@ public class QuickSort {
 			int n= s.nextInt();
 			a[i]= n;
 		}
-		System.out.println(Arrays.toString(quicksort(a)));
+		System.out.println("Sorted Array is "+Arrays.toString(quicksort(a,0,a.length-1)));
 		
 	
 	}
 }
+/*
+OUTPUT:
+Enter the size of the integer
+8
+Enter the integers of the array
+11 16 2 8 1 9 4 7
+Sorted Array is [1, 2, 4, 7, 8, 9, 11, 16]
+*/
