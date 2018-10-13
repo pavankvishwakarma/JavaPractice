@@ -33,3 +33,11 @@ public class Program1 {
 		
 	}
 }
+
+
+/*Output
+Enter the size of the integer
+5
+Enter the integers of the array
+1 2 7 3 3
+3*/
