@@ -32,7 +32,6 @@ public class Program6 {
 			}else{
 				prev=a[i];
 				temp[count++]=a[i];
-				
 			}
 		}
 		int b[]= new int[count];
