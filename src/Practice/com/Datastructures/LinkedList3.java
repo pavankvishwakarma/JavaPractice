@@ -70,7 +70,8 @@ public class LinkedList3 {
 			int n = s.nextInt();
 			ll.add(n);
 		}
-		
+		//need to write a program to reverse by recursion as well!
+		//refer:https://simpleprogrammer.com/programming-interview-questions/
 		ll.reverseLinkedList(ll.head);
 		ll.printAllNodes(ll.head);
 	
