@@ -62,7 +62,7 @@ public class LinkedList2 {
 			int n = s.nextInt();
 			ll.add(n);
 		}
-		// Need to add a loop condition in main method  
+		// Need to add a loop condition in main method, Assume linked list has more than 4 elements
 		ll.head.next.next.next.next=ll.head.next;
 		
 		System.out.println("Is loop present in the linkedlist? "+ll.isLoopPresent(ll.head));
