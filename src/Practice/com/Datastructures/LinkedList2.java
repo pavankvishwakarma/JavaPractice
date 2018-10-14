@@ -1,5 +1,6 @@
 package Practice.com.Datastructures;
-
+/*Find loop wheather loop exists in a list or not!
+ **/
 import java.util.Scanner;
 
 class Node{
@@ -61,8 +62,8 @@ public class LinkedList2 {
 			int n = s.nextInt();
 			ll.add(n);
 		}
-		
-		ll.head.setNext(ll.head.getNext().getNext().getNext().getNext());
+		// Need to add a loop condition in main method, below code doesnt work!!   
+		//ll.head.setNext(ll.head.getNext().getNext().getNext().getNext());
 		
 		System.out.println("Is loop present in the linkedlist? "+ll.isLoopPresent(ll.head));
 	}
