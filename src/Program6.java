@@ -1,4 +1,4 @@
-/* Remove Duplicates from Array Without Using Java Collection API*/
+/* Remove Duplicates from Array Without Using Java Collection API create new Array*/
 
 
 import java.util.ArrayList;
@@ -17,25 +17,29 @@ public class Program6 {
 			a[i]= n;
 		}
 		removeDuplicatesInPlace(a);
-		//System.out.println("array with removed duplicates "+Arrays.toString(removeDuplicatesInPlace(a)));
 		s.close();
 	}
 	
 	public static void removeDuplicatesInPlace(int a[]){
-		ArrayList<Integer> al =new ArrayList<Integer>();
+		int temp[] = new int[a.length];
 		Arrays.sort(a);
 		int prev=a[0];
-		al.add(a[0]);
+		int count=1;
+		temp[0]=a[0];
 		for (int i = 1; i < a.length; i++) {
 			if(prev==a[i]){
 				continue;
 			}else{
 				prev=a[i];
-				al.add(prev);
+				temp[count++]=a[i];
+				
 			}
 		}
-		System.out.println(al);
-		
+		int b[]= new int[count];
+		for (int i = 0; i < b.length; i++) {
+			b[i]=temp[i];
+		}
+		System.out.println("New Array with no duplicates is"+Arrays.toString(b));
 	}
 }
 /*
@@ -44,6 +48,6 @@ Enter the size of the integer
 6
 Enter the integers of the array
 1 2 2 3 3 4
-array with removed duplicates [1, 2, 0, 3, 0, 4]
+New Array with no duplicates is[1, 2, 3, 4]
 
 */
