@@ -39,15 +39,15 @@ public class LinkedList3 {
 			Node s=node.getNext();
 			Node t=node.getNext().getNext();
 			
-			do{
+			while(t!=null){
 				s.setNext(f);
 				f=s;
 				s=t;
 				t=t.getNext();
 				
-			}while(t!=null);
+			}
 			head.setNext(null);
-			head=f;
+			head=s;
 		}
 		public void printAllNodes(Node h){
 			Node temp= h;

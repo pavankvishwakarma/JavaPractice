@@ -17,10 +17,11 @@ public class Strings1 {
 		//printUniqueCharacters(str);
 		//printDuplicates(str);
 		//firstNonRepeating(str);
-		System.out.println(reverseRecurse(str));
-		
+		//System.out.println(reverseRecurse(str));
+		findOccurrensesCount(str);
+
 	}
-/*	Print all unique characters from a string  */
+	/*	Print all unique characters from a string  */
 	public static void printUniqueCharacters(String str){
 		char[] strArr = str.toCharArray();
 		Arrays.sort(strArr);
@@ -37,8 +38,8 @@ public class Strings1 {
 			}
 		}
 	}
-	
-/*Print all duplicate characters in a sting	*/
+
+	/*Print all duplicate characters in a sting	*/
 	public static void printDuplicates(String str){
 		char[] strArr = str.toCharArray();
 		int i=1;
@@ -52,8 +53,8 @@ public class Strings1 {
 			}
 		}
 	}
-	
-/*Find the first non repeating character	*/
+
+	/*Find the first non repeating character	*/
 	public static void firstNonRepeating(String str){
 		HashMap<Character, Integer> hm = new LinkedHashMap<>();
 		char[] strArr= str.toCharArray();
@@ -70,14 +71,29 @@ public class Strings1 {
 				break;
 			}
 		}
-		
+
 	}
-/* Reverse a string using recursion */
+	/* Reverse a string using recursion */
 	public static String reverseRecurse(String str){
 		if(str.length()<=0){
 			return "";
 		}
 		return str.substring(str.length()-1)+reverseRecurse(str.substring(0, str.length()-1));
 	}
-	
+
+	/*Count Occurences of a given string   */
+	public static void findOccurrensesCount(String str){
+
+		int count[]=new int[265];
+		for (int i = 0; i < str.length(); i++) {
+			count[str.charAt(i)]++;
+		}
+		
+		for (int i = 0; i < count.length; i++) {
+			if(count[i]!=0){
+				System.out.println((char)i+ " " + count[i]);
+			}
+		}
+	}
+
 }
