@@ -4,36 +4,14 @@ import java.util.Scanner;
 public class TestClass
 
 {
-
-	static int cntr = 0;
-
-	TestClass()
-
-	{
-		cntr++;
-
-		if (cntr > 2)
-
-			throw new NullPointerException();// u can define a new exception //
-												// for this
-
+	public static void main(String[] args) {
+		for (int i = 0; i < 5; i++) {
+			System.out.print(i+" ");
+		}
+		System.out.println();
+		
+		for (int i = 2,count=0; i < 5 && count<5; i=(i+1)%5,count++) {
+			System.out.print(i+" ");
+		}
 	}
-
-	public static void main(String args[])
-
-	{
-
-		TestClass t1 = new TestClass();
-
-		System.out.println("hello 1");
-
-		TestClass t2 = new TestClass();
-
-		System.out.println("hello 2");
-
-		TestClass t3 = new TestClass();
-
-	}
-
 }
-

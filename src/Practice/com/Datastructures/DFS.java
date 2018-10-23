@@ -1,5 +1,5 @@
 package Practice.com.Datastructures;
-
+/* Only rechable nodes from the source */
 import java.util.Iterator;
 import java.util.LinkedList;
 
