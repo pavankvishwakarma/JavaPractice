@@ -1,4 +1,4 @@
-package Practice.com.Datastructures;
+package com.practice.DataStructures;
 /*Array representations Adjecency matrix  */
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package Practice.com.Datastructures;
+package com.practice.DataStructures;
 /* Only rechable nodes from the source */
 import java.util.Iterator;
 import java.util.LinkedList;

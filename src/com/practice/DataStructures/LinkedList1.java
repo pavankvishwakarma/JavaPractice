@@ -1,5 +1,5 @@
 /* find the middle element of a list in single pass */
-package Practice.com.Datastructures;
+package com.practice.DataStructures;
 
 import java.util.Scanner;
 

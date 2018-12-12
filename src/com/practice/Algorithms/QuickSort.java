@@ -1,4 +1,4 @@
-package Practice.com.Algorithms;
+package com.practice.Algorithms;
 
 import java.util.Arrays;
 import java.util.Scanner;

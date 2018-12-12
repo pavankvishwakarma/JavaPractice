@@ -1,4 +1,4 @@
-package Practice.com.Datastructures;
+package com.practice.DataStructures;
 
 import java.util.Scanner;
 

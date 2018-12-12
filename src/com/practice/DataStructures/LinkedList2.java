@@ -1,4 +1,4 @@
-package Practice.com.Datastructures;
+package com.practice.DataStructures;
 /*Find loop wheather loop exists in a list or not!
  **/
 import java.util.Scanner;
