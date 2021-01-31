@@ -29,7 +29,7 @@ public class Program1 {
 			int n= s.nextInt();
 			a[i]= n;
 		}
-		System.out.println(-1==duplicateInteger(a)?"No duplicate":duplicateInteger(a));
+		System.out.println(-1==duplicateInteger(a)?"No duplicate":"Dubplicate number found "+duplicateInteger(a));
 		
 	}
 }
